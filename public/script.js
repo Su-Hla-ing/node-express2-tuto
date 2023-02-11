@@ -1,6 +1,6 @@
 const fetchData = async () => {
     const apiUrl = localStorage.getItem("ApiUrl");
-    console.log(apiUrl)
+    console.log(piUrl)
     if(apiUrl){
         const response = await fetch(`${apiUrl}/users`);
         console.log(response)
