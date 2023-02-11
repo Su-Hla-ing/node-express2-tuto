@@ -21,13 +21,13 @@ const html = `
 <body>
     <h1>hello world</h1>
     <script type="text/javascript">
-      localStorage.setItem("apiUrl", "${API}")
+     localStorage.setItem("apiUrl", '${API}')
       window.location.href = "/"
     </script>
 </body>
 </html>
 `
-app.get('/api/users', (req:Request, res:Response) => {
+app.get('/users', (req:Request, res:Response) => {
     res.send({name: "Alex", age: 20, email: "alex@gmail.com"})
 })
 
