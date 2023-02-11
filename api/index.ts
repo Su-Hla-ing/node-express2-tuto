@@ -27,7 +27,7 @@ const html = `
 </body>
 </html>
 `
-app.get('/users', (req:Request, res:Response) => {
+app.get('/api/users', (req:Request, res:Response) => {
     res.send({name: "Alex", age: 20, email: "alex@gmail.com"})
 })
 
