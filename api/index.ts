@@ -21,6 +21,7 @@ const html = `
 <body>
     <h1>hello world</h1>
     <script type="text/javascript">
+    console.log(hello)
      localStorage.setItem("apiUrl", "${API}")
       window.location.href = "/"
     </script>
