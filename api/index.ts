@@ -3,7 +3,7 @@ import express, { Request, Response } from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 const API = process.env.Api_Url;
-
+console.log(API)
 const app = express();
 
 app.use(express.static('public'));
@@ -21,7 +21,7 @@ const html = `
 <body>
     <h1>hello world</h1>
     <script type="text/javascript">
-     localStorage.setItem("apiUrl", '${API}')
+     localStorage.setItem("apiUrl", "${API}")
       window.location.href = "/"
     </script>
 </body>
