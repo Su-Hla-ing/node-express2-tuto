@@ -2,8 +2,8 @@ import express, { Request, Response } from 'express';
 
 import dotenv from 'dotenv';
 dotenv.config();
-const API = process.env.Api_Url;
-console.log(API)
+const Api_url = process.env.Api_Url;
+
 const app = express();
 
 app.use(express.static('public'));
@@ -21,8 +21,8 @@ const html = `
 <body>
     <h1>hello world</h1>
     <script type="text/javascript">
-    console.log(hello)
-    localStorage.setItem("ApiUrl", "${API}")
+    console.log('hello')
+    localStorage.setItem("ApiUrl", "${Api_url}")
       window.location.href = "/"
     </script>
 </body>
