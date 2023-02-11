@@ -22,7 +22,7 @@ const html = `
     <h1>hello world</h1>
     <script type="text/javascript">
     console.log(hello)
-     localStorage.setItem("apiUrl", "${API}")
+    localStorage.setItem("ApiUrl", "${API}")
       window.location.href = "/"
     </script>
 </body>
